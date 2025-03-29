@@ -55,4 +55,13 @@
       </button>
     </form>
   </div>
+  <hr>
+  <h2>Transaction History</h2>
+  <ul>
+    <li *ngFor="let transaction of transactionHistory">
+      {{ transaction.date | date:'short' }} - 
+      From: {{ transaction.from }} → To: {{ transaction.to }}, 
+      Amount: {{ transaction.amount | currency }}
+    </li>
+  </ul>  
 </div>

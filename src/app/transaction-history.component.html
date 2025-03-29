@@ -1,0 +1,19 @@
+<h2>Transaction History</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>Amount</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of transactions">
+      <td>{{ transaction.from }}</td>
+      <td>{{ transaction.to }}</td>
+      <td>{{ transaction.amount }}</td>
+      <td>{{ transaction.date | date:'short' }}</td>
+    </tr>
+  </tbody>
+</table>
