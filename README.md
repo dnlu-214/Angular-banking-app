@@ -2,58 +2,57 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
 
-## Development server
+# Angular Banking App
 
-To start a local development server, run:
+## Project Overview
 
+This is a banking application built with Angular, featuring account creation, fund transfer, and transaction history viewing functionalities. The project utilizes Angular’s form handling, styling, and basic component structure.
+
+## Features
+
+- **Create Account**: Users can enter an account name, initial balance, and choose an account type (Chequing or Savings) to create a new account.
+- **Transfer Funds**: Users can select a source account and a destination account to transfer funds, with balance checks to ensure sufficient funds.
+- **View Transaction History**: Users can view a list of all completed transfers.
+
+## Tech Stack
+
+- **Angular**: Frontend framework
+- **CSS**: Page styling and UI enhancement
+- **Reactive Forms**: For handling forms and validations
+- **Router**: For navigation between pages (although not enabled at the moment)
+- **Bootstrap**: For responsive design and UI beautification
+
+## Installation and Running
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/angular-banking-app.git
+cd angular-banking-app
+```
+### Install the Dependencies
+```bash
+npm install
+```
+### Run the App
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Then, open your browser and go to http://localhost:4200/.
 
-## Code scaffolding
+## Project Structure
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- src/app/app.component.ts: The main component handling account creation and fund transfer functionality.
 
-```bash
-ng generate component component-name
-```
+- src/app/transaction-history.component.ts: Transaction history component that displays all the completed transfers.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- src/app/app.component.html: HTML template for the main page.
 
-```bash
-ng generate --help
-```
+- src/app/app.component.css: Page styling.
 
-## Building
+## Project Status
+The project currently includes account creation and fund transfer functionalities, as well as transaction history. Future plans may involve enabling Angular Router for multi-page navigation.
 
-To build the project run:
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
